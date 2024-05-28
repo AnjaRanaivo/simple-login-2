@@ -1,4 +1,4 @@
-name: "Super linter"
+name: "Semgrep hadolint"
 on: 
   push:
     
