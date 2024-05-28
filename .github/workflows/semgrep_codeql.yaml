@@ -19,8 +19,8 @@ jobs:
         env:
           SEMGREP_RULES: p/default
 
-      - name: "Upload SERIF file GitHub CodeQL"
-        uses: github/codeql-action/upload-sarif@v2
+      - name: "Upload SARIF file GitHub CodeQL"
+        uses: github/codeql-action/upload-sarif@v3
         if: always()
         with:
           sarif_file: semgrep.sarif
