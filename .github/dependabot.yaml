@@ -4,6 +4,8 @@ updates:
     directory: "/"
     schedule:
       interval: "daily"
+      time: "11:38"
+      timezone: "Europe/Paris"
   - package-ecosystem: "pip"
     directory: "/"
     schedule:
