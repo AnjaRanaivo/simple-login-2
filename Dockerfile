@@ -1,11 +1,11 @@
 # Install npm packages
-FROM node:10.17.0-alpine AS npm
+FROM node:22.2.0-alpine AS npm
 WORKDIR /code
 COPY ./static/package*.json /code/static/
 RUN cd /code/static && npm install
 
 # Main image
-FROM python:3.10
+FROM python:3.12
 
 # Keeps Python from generating .pyc files in the container
 ENV PYTHONDONTWRITEBYTECODE 1
