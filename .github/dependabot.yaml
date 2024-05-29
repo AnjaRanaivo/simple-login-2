@@ -1,20 +1,20 @@
-version: 2
-updates:
-  - package-ecosystem: "github-actions"
-    directory: "/"
-    schedule:
-      interval: "daily"
-      time: "11:42"
-      timezone: "Europe/Paris"
-  - package-ecosystem: "pip"
-    directory: "/"
-    schedule:
-      interval: "daily"
-      time: "11:42"
-      timezone: "Europe/Paris"
-  - package-ecosystem: "docker"
-    directory: "/"
-    schedule:
-      interval: "daily"
-      time: "11:42"
-      timezone: "Europe/Paris"
+# version: 2
+# updates:
+#   - package-ecosystem: "github-actions"
+#     directory: "/"
+#     schedule:
+#       interval: "daily"
+#       time: "11:42"
+#       timezone: "Europe/Paris"
+#   - package-ecosystem: "pip"
+#     directory: "/"
+#     schedule:
+#       interval: "daily"
+#       time: "11:42"
+#       timezone: "Europe/Paris"
+#   - package-ecosystem: "docker"
+#     directory: "/"
+#     schedule:
+#       interval: "daily"
+#       time: "11:42"
+#       timezone: "Europe/Paris"

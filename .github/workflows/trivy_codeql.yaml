@@ -1,0 +1,22 @@
+# name: "trivy"
+# on: 
+#   workflow_dispatch:
+    
+# jobs:
+#   trivy:
+#     name: Trivy 
+#     runs-on: ubuntu-latest
+#     container:
+#       image: returntocorp/semgrep:1.74.0
+#     steps:
+#       - name: "Run trivy vulnerability scanner"
+#         uses: aquasecurity/trivy-action@0.8.0
+#         with:
+#           image-ref: ''
+#           format: 'sarif'
+#           output: 'trivy-resullts.sarif'
+
+#       - name: "Upload trivy scan results" 
+#         uses: github/codeql-action/upload-sarif@v2 
+#         with:
+#           sarif_file: 'trivy-results.sarif'
