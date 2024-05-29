@@ -1,4 +1,5 @@
 name: "setup poetry"
+description: test
 runs:
   using: composite
   steps:
