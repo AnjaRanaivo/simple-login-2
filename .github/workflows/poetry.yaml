@@ -10,7 +10,7 @@ jobs:
       - name: checkout
         uses: actions/checkout@v2
 
-      - uses: ./.github/poetry_setup
+      - uses: /.github/poetry_setup
 
       - name: install with poetry
         run: |
