@@ -20,3 +20,4 @@ runs:
 
     - name: installer poetry
       run: pip install poetry
+      shell: bash
