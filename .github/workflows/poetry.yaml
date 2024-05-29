@@ -1,0 +1,28 @@
+name: "Poetry Build"
+
+on:
+  push: 
+jobs:
+  poetry_build:
+    name: "poetry build"
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout
+        uses: actions/checkout@v2
+
+      - uses: ./.github/actions/poetry_setup
+
+      - name: install with poetry
+        run: |
+          poetry install
+          poetry run pytest tests/test_temperature.py
+
+      - name: Build
+        run: |
+         poetry build
+
+      - name: Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: dist-artifacts
+          path: dist/
