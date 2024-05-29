@@ -3,6 +3,8 @@ description: test
 runs:
   using: composite
   steps:
+    - name: checkout
+      uses: actions/checkout@v2
     - name: setup py
       id: setup_python
       uses: actions/setup-python@v4
