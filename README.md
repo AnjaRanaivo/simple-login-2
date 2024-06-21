@@ -27,7 +27,7 @@
 
 ---
 
-Your email address is your **online identity**. When you use the same email address everywhere, you can be easily tracked.
+Your emailllll address is your **online identity**. When you use the same email address everywhere, you can be easily tracked.
 More information on https://simplelogin.io
 
 This README contains instructions on how to self host SimpleLogin.
